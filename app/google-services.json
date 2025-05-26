@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "451981467568",
+    "firebase_url": "https://family-tracker-f23e5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "family-tracker-f23e5",
+    "storage_bucket": "family-tracker-f23e5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451981467568:android:96c2ba5872a0e81311c075",
+        "android_client_info": {
+          "package_name": "com.example.familytracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451981467568-dh8g6pdrera3phfvuae5glp47hohvafe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.familytracker",
+            "certificate_hash": "3e8297fbbba5292297dcd568c3e49681b24cd17f"
+          }
+        },
+        {
+          "client_id": "451981467568-50ocvbbodlte2vsttie3krbojg8phqi5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwDaPj5POFX26wtpPzQ7RlmyUoivCQNCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451981467568-50ocvbbodlte2vsttie3krbojg8phqi5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
