@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashBackground">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#14532d"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:tint="@android:color/white"
+            android:contentDescription="Kembali" />
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Kontak"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <!-- Chat List -->
+    <ListView
+        android:id="@+id/chatListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/chatInputLayout"
+        android:padding="8dp"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <!-- Chat Input -->
+    <LinearLayout
+        android:id="@+id/chatInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#C7A76C"
+        android:gravity="center_vertical">
+
+        <!-- Tombol Gambar -->
+        <ImageButton
+            android:id="@+id/btnImage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_camera"
+            android:background="@android:color/transparent"
+            android:tint="#14532d"
+            android:contentDescription="Kirim Foto" />
+
+        <!-- EditText Pesan -->
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="Ketik pesan..."
+            android:background="@drawable/background_text"
+            android:paddingHorizontal="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:layout_marginHorizontal="8dp" />
+
+        <!-- Tombol Kirim -->
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_send"
+            android:background="@android:color/transparent"
+            android:tint="#14532d"
+            android:contentDescription="Kirim Pesan" />
+    </LinearLayout>
+</RelativeLayout>

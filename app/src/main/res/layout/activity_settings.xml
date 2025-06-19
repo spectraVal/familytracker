@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="#14532d"
+            android:textStyle="bold"
+            android:padding="12dp" />
+
+        <!-- Konten dengan padding 24dp -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Simpan Username -->
+            <EditText
+                android:id="@+id/etRival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rival"
+                android:background="@drawable/background_text"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#777777" />
+
+            <Button
+                android:id="@+id/btnSimpanUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpan Username Baru"
+                android:backgroundTint="#14532d"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Simpan Password -->
+            <EditText
+                android:id="@+id/etPasswordBaru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password baru"
+                android:inputType="textPassword"
+                android:background="@drawable/background_text"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/etKonfirmasiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Konfirmasi password baru"
+                android:inputType="textPassword"
+                android:background="@drawable/background_text"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnSimpanPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpan Password Baru"
+                android:backgroundTint="#14532d"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Daftar Status Rival -->
+            <LinearLayout
+                android:id="@+id/layoutRivalStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Contoh item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Ke: Maulana"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:text="Status: pending"
+                            android:textSize="14sp"
+                            android:textColor="#555555" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#2E5E2E"
+                        android:background="@android:color/holo_green_dark"
+                        android:src="@android:drawable/ic_menu_save"
+                        android:tint="#FFFFFF"
+                        android:layout_marginEnd="4dp" />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#B00020"
+                        android:background="@android:color/holo_red_dark"
+                        android:src="@android:drawable/ic_delete"
+                        android:tint="#FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
